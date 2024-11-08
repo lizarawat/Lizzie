@@ -1,0 +1,160 @@
+@media only screen and (min-width: 600px) {
+    :root {
+        --pg-margin: 24px;
+    }
+    section.hero h1 {
+        --hero-text: 40px;
+        width: 60%;
+    }
+    section.hero {
+        aspect-ratio: 3/2;
+        background-size: 50%;
+        background-position: 90% 70%;
+        padding-top: 64px;
+    }
+    nav {
+        position: relative;
+    }
+    nav ul.navigation-menu {
+        position: absolute;
+        top: 64px;
+        background: var(--light-01);
+        left: 0;
+        z-index: -1;
+        width: 100vw;
+    }
+    nav ul.navigation-menu li a {
+        font-size: 16px;
+        white-space: nowrap;
+    }
+    nav ul.navigation-menu .subnav {
+        display: none;
+    }
+    nav ul.navigation-menu > li:hover .subnav {
+        display: none;
+    }
+    .btn-group {
+        display: flex;
+        flex-direction: column;
+    }
+    .shop-pets {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-row: auto auto;
+        grid-column-gap: 24px;
+        grid-row-gap: 24px;
+    }
+    .services {
+        display: flex;
+        flex-direction: column;
+        grid-gap: 24px;
+    }
+    section:not(.hero) {
+        padding: var(--pg-margin);
+    }
+    #locate p {
+
+        width: 60%;
+    }
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    :root {
+        --pg-margin: 48px;
+    }
+    section.hero h1 {
+        --hero-text: 48px;
+    }
+    section.hero {
+        aspect-ratio: 2/1;
+    }
+    .btn-group {
+        flex-direction: row;
+    }
+    .shop-pets,
+    .services {
+        display: flex;
+        flex-direction: row;
+        grid-gap: 24px;
+    }
+    ul.subnav {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-row: auto auto;
+        grid-column-gap: 24px;
+        grid-row-gap: 24px;
+        padding: 48px;
+    }
+    nav ul.navigation-menu {
+        top: 0;
+        z-index: 1;
+        background: none;
+        width: auto;
+        position: relative;
+    }
+    nav ul.navigation-menu .subnav {
+        display: flex;
+    }
+    nav ul.navigation-menu > li:hover .subnav {
+        display: flex;
+    }
+    #locate p {
+        width: 40%;
+    }
+    footer {
+        flex-direction: row;
+        text-align: left;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    :root {
+        --pg-margin: 80px;
+    }
+    section.hero h1 {
+        --hero-text: 56px;
+    }
+    nav .navigation-menu > li > ul.subnav {
+        padding: 48px;
+        grid-gap: 24px;
+    }
+    section.hero {
+        aspect-ratio: 3/1;
+        background-size: 30%;
+        background-position: 90% 60%;
+    }
+    .shop-pets,
+    .services {
+        display: flex;
+        flex-direction: row;
+        grid-gap: 24px;
+    }
+    nav ul.navigation-menu {
+        top: 0;
+        z-index: 1;
+        background: none;
+        width: auto;
+        position: relative;
+    }
+    ul.subnav {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-row: auto auto;
+        grid-column-gap: 24px;
+        grid-row-gap: 24px;
+        padding: 48px;
+    }
+    nav ul.navigation-menu > li:hover .subnav {
+        display: grid;
+    }
+    #locate p {
+
+        width: 40%;
+    }
+    footer {
+        flex-direction: row;
+        text-align: left;
+    }
+}

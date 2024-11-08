@@ -1,0 +1,252 @@
+section,
+footer {
+    position: relative;
+    width: 100%;
+    padding: 0 var(--pg-margin);
+}
+section.hero {
+    height: auto;
+    background: var(--brand-02) url('./image-removebg-preview.png') no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    grid-gap: 20pxx;
+    display: inline-flex;
+}
+.btn-group {
+    display: flex;
+    flex-direction: row;
+    grid-gap: 16px;
+}
+section.hero h1 {
+    font-size: var(--hero-text);
+    font-weight: 600;
+    line-height: 1.2;
+    width: 40%;
+    color: var(--text-01);
+}
+.card-med {
+    width: var(--nav-card-size);
+    height: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+.card-med > a {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 4px;
+    padding: 12px 16px 0px;
+}
+.card-med > a > span {
+    width: 100%;
+}
+.card-med > a > span:nth-of-type(1) {
+    width: 100%;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.2;
+}
+.card-med > a > span:nth-of-type(2) {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    grid-gap: 6px;
+}
+.card-med > a > span:nth-of-type(2) > span {
+    font-size: 18px;
+}
+#serv-groom > .card-image {
+    background: linear-gradient(45deg, #45828C 0%, #A7D4D8 100%);
+}
+#serv-board > .card-image {
+    background: linear-gradient(45deg, #EDDAA9 0%, #B87D93 100%);
+}
+.card-med:hover .card-image {
+    box-shadow: var(--card-hover);
+}
+.card-med > .card-image {
+    box-shadow: var(--card-shadow);
+}
+.card-med > .card-image > img {
+    width: 80%;
+    height: 80%;
+}
+section:not(.hero) {
+    padding: calc(var(--pg-margin)/2) var(--pg-margin);
+}
+section h2 {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 1.2;
+    text-align: center;
+    color: var(--text-01);
+    margin-bottom: 32px;
+}
+.card-wide {
+    flex-direction: row;
+    padding: 0;
+}
+.card-wide .card-image {
+    width: 50%;
+    border-radius: 0;
+}
+.card-image img {
+    width: 80%;
+    height: 80%;
+}
+.card-wide > ul {
+    padding: 40px;
+}
+.card-wide > ul > li {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    grid-gap: 24px;
+    margin-bottom: 16px;
+}
+.card-wide .subtitle {
+    font-size: 14px;
+    line-height: 1.4;
+    font-weight: 500;
+    margin-bottom: 24px;
+}
+.card-wide > ul > li span {
+    font-size: 16px;
+}
+.card-large > ul > li:last-of-type {
+    margin-bottom: 40px;
+}
+.card-large button {
+    margin-top: auto;
+}
+#locate > div {
+    background: var(--brand-02);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 0;
+    border-radius: 12px;
+    box-shadow: var(--card-shadow);
+    transition: var(--hover-timing);
+    cursor: pointer;
+}
+#locate > div:hover {
+    box-shadow: var(--card-hover);
+}
+#locate h2 {
+    margin-top: 0;
+}
+#locate p {
+    line-height: 1.5;
+    margin-bottom: 40px;
+    width: 50%;
+    text-align: center;
+}
+.btn-group {
+    display: flex;
+    flex-direction: row;
+    grid-gap: 16px;
+}
+footer {
+    background: var(--text-01);
+    padding: 80px 80px 0px;
+    margin-top: 80px;
+    display: flex;
+}
+footer ul {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 24px;
+    box-shadow: none;
+    flex: 1;
+    color: var(--light-01);
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 80px;
+
+}
+footer ul li a {
+    color: var(--light-01);
+    text-decoration: none;
+    font-size: 14px;
+}
+footer ul li {
+    color: var(--light-01);
+    padding: 0;
+}
+@media only screen and (max-width: 600px) {
+    :root {
+        --pg-margin: 16px;
+    }
+    section.hero {
+        aspect-ratio: 1/1;
+        padding-top: 64px;
+    }
+    section.hero h1 {
+        --hero-text: 40px;
+        width: 80%;
+    }
+    section.hero {
+        background-size: 85%;
+        background-position: 360% 60%;
+    }
+    nav {
+        position: relative;
+    }
+    nav ul.navigation-menu {
+        position: absolute;
+        position: absolute;
+        top: 64px;
+        background: var(--light-01);
+        left: 0;
+        z-index: -1;
+        width: 100vw;
+    }
+    nav ul.navigation-menu li a {
+        font-size: 16px;
+        /*        padding: 0 12px;*/
+        white-space: nowrap;
+    }
+    nav ul.navigation-menu .subnav {
+        display: none;
+    }
+    nav ul.navigation-menu > li:hover .subnav {
+        display: none;
+    }
+    .btn-group {
+        flex-direction: column;
+    }
+    .shop-pets,
+    .services {
+        display: flex;
+        flex-direction: column;
+        grid-gap: 24px;
+        width: 100%;
+    }
+    .services > li {
+        display: flex;
+        flex-direction: column;
+    }
+    .services > li > .card-image {
+        width: 100%;
+    }
+    section:not(.hero) {
+        padding: var(--pg-margin);
+    }
+    #locate p {
+
+        width: 80%;
+    }
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+}
